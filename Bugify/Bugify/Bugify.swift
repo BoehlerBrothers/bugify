@@ -15,3 +15,11 @@ public class Bugify {
         print("asdf" + sdk)
     }
 }
+
+extension UIWindow {
+    open override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if motion == .motionShake {
+            print("Device shaken")
+        }
+    }
+}

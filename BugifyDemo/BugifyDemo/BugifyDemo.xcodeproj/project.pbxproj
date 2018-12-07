@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		801B23AD21B559F4009BA49E /* Bugify.h in Headers */ = {isa = PBXBuildFile; fileRef = 801B23AB21B559F4009BA49E /* Bugify.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		801B23B421B55A28009BA49E /* Bugify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B23B321B55A28009BA49E /* Bugify.swift */; };
+		80607BE421BAD90300A60688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80607BE321BAD90300A60688 /* AppDelegate.swift */; };
+		80607BE621BAD90300A60688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80607BE521BAD90300A60688 /* ViewController.swift */; };
+		80607BE921BAD90300A60688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80607BE721BAD90300A60688 /* Main.storyboard */; };
+		80607BEB21BAD90300A60688 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80607BEA21BAD90300A60688 /* Assets.xcassets */; };
+		80607BEE21BAD90300A60688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80607BEC21BAD90300A60688 /* LaunchScreen.storyboard */; };
+		80607BFC21BADAD300A60688 /* Bugify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80607BFB21BADAD300A60688 /* Bugify.swift */; };
+		80607C0021BAE16000A60688 /* BugifyStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80607BFF21BAE16000A60688 /* BugifyStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		801B23A821B559F4009BA49E /* Bugify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bugify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		801B23AB21B559F4009BA49E /* Bugify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bugify.h; sourceTree = "<group>"; };
-		801B23AC21B559F4009BA49E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		801B23B321B55A28009BA49E /* Bugify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bugify.swift; sourceTree = "<group>"; };
+		80607BE021BAD90300A60688 /* BugifyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugifyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80607BE321BAD90300A60688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80607BE521BAD90300A60688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80607BE821BAD90300A60688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80607BEA21BAD90300A60688 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80607BED21BAD90300A60688 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80607BEF21BAD90300A60688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80607BFB21BADAD300A60688 /* Bugify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bugify.swift; sourceTree = "<group>"; };
+		80607BFF21BAE16000A60688 /* BugifyStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BugifyStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		801B23A521B559F4009BA49E /* Frameworks */ = {
+		80607BDD21BAD90300A60688 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,119 +39,138 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		801B239E21B559F4009BA49E = {
+		80607BD721BAD90300A60688 = {
 			isa = PBXGroup;
 			children = (
-				801B23AA21B559F4009BA49E /* Bugify */,
-				801B23A921B559F4009BA49E /* Products */,
+				80607BE221BAD90300A60688 /* BugifyDemo */,
+				80607BE121BAD90300A60688 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		801B23A921B559F4009BA49E /* Products */ = {
+		80607BE121BAD90300A60688 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				801B23A821B559F4009BA49E /* Bugify.framework */,
+				80607BE021BAD90300A60688 /* BugifyDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		801B23AA21B559F4009BA49E /* Bugify */ = {
+		80607BE221BAD90300A60688 /* BugifyDemo */ = {
 			isa = PBXGroup;
 			children = (
-				801B23AB21B559F4009BA49E /* Bugify.h */,
-				801B23AC21B559F4009BA49E /* Info.plist */,
-				801B23B321B55A28009BA49E /* Bugify.swift */,
+				80607BE321BAD90300A60688 /* AppDelegate.swift */,
+				80607BE521BAD90300A60688 /* ViewController.swift */,
+				80607BE721BAD90300A60688 /* Main.storyboard */,
+				80607BEA21BAD90300A60688 /* Assets.xcassets */,
+				80607BEC21BAD90300A60688 /* LaunchScreen.storyboard */,
+				80607BEF21BAD90300A60688 /* Info.plist */,
+				80607BFB21BADAD300A60688 /* Bugify.swift */,
+				80607BFF21BAE16000A60688 /* BugifyStoryboard.storyboard */,
 			);
-			path = Bugify;
+			path = BugifyDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		801B23A321B559F4009BA49E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				801B23AD21B559F4009BA49E /* Bugify.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		801B23A721B559F4009BA49E /* Bugify */ = {
+		80607BDF21BAD90300A60688 /* BugifyDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 801B23B021B559F4009BA49E /* Build configuration list for PBXNativeTarget "Bugify" */;
+			buildConfigurationList = 80607BF221BAD90300A60688 /* Build configuration list for PBXNativeTarget "BugifyDemo" */;
 			buildPhases = (
-				801B23A321B559F4009BA49E /* Headers */,
-				801B23A421B559F4009BA49E /* Sources */,
-				801B23A521B559F4009BA49E /* Frameworks */,
-				801B23A621B559F4009BA49E /* Resources */,
+				80607BDC21BAD90300A60688 /* Sources */,
+				80607BDD21BAD90300A60688 /* Frameworks */,
+				80607BDE21BAD90300A60688 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Bugify;
-			productName = Bugify;
-			productReference = 801B23A821B559F4009BA49E /* Bugify.framework */;
-			productType = "com.apple.product-type.framework";
+			name = BugifyDemo;
+			productName = BugifyDemo;
+			productReference = 80607BE021BAD90300A60688 /* BugifyDemo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		801B239F21B559F4009BA49E /* Project object */ = {
+		80607BD821BAD90300A60688 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Lukas;
 				TargetAttributes = {
-					801B23A721B559F4009BA49E = {
+					80607BDF21BAD90300A60688 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
 					};
 				};
 			};
-			buildConfigurationList = 801B23A221B559F4009BA49E /* Build configuration list for PBXProject "Bugify" */;
+			buildConfigurationList = 80607BDB21BAD90300A60688 /* Build configuration list for PBXProject "BugifyDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 801B239E21B559F4009BA49E;
-			productRefGroup = 801B23A921B559F4009BA49E /* Products */;
+			mainGroup = 80607BD721BAD90300A60688;
+			productRefGroup = 80607BE121BAD90300A60688 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				801B23A721B559F4009BA49E /* Bugify */,
+				80607BDF21BAD90300A60688 /* BugifyDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		801B23A621B559F4009BA49E /* Resources */ = {
+		80607BDE21BAD90300A60688 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80607BEE21BAD90300A60688 /* LaunchScreen.storyboard in Resources */,
+				80607C0021BAE16000A60688 /* BugifyStoryboard.storyboard in Resources */,
+				80607BEB21BAD90300A60688 /* Assets.xcassets in Resources */,
+				80607BE921BAD90300A60688 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		801B23A421B559F4009BA49E /* Sources */ = {
+		80607BDC21BAD90300A60688 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				801B23B421B55A28009BA49E /* Bugify.swift in Sources */,
+				80607BE621BAD90300A60688 /* ViewController.swift in Sources */,
+				80607BE421BAD90300A60688 /* AppDelegate.swift in Sources */,
+				80607BFC21BADAD300A60688 /* Bugify.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		80607BE721BAD90300A60688 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80607BE821BAD90300A60688 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80607BEC21BAD90300A60688 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80607BED21BAD90300A60688 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		801B23AE21B559F4009BA49E /* Debug */ = {
+		80607BF021BAD90300A60688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -175,7 +204,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -200,12 +228,10 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		801B23AF21B559F4009BA49E /* Release */ = {
+		80607BF121BAD90300A60688 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -239,7 +265,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -258,67 +283,48 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		801B23B121B559F4009BA49E /* Debug */ = {
+		80607BF321BAD90300A60688 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7UGU2CH934;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
-				INFOPLIST_FILE = Bugify/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = BugifyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.bugify.app.Bugify;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				PRODUCT_BUNDLE_IDENTIFIER = at.bugify.app.BugifyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		801B23B221B559F4009BA49E /* Release */ = {
+		80607BF421BAD90300A60688 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7UGU2CH934;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
-				INFOPLIST_FILE = Bugify/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INFOPLIST_FILE = BugifyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = at.bugify.app.Bugify;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = at.bugify.app.BugifyDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -327,25 +333,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		801B23A221B559F4009BA49E /* Build configuration list for PBXProject "Bugify" */ = {
+		80607BDB21BAD90300A60688 /* Build configuration list for PBXProject "BugifyDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				801B23AE21B559F4009BA49E /* Debug */,
-				801B23AF21B559F4009BA49E /* Release */,
+				80607BF021BAD90300A60688 /* Debug */,
+				80607BF121BAD90300A60688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		801B23B021B559F4009BA49E /* Build configuration list for PBXNativeTarget "Bugify" */ = {
+		80607BF221BAD90300A60688 /* Build configuration list for PBXNativeTarget "BugifyDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				801B23B121B559F4009BA49E /* Debug */,
-				801B23B221B559F4009BA49E /* Release */,
+				80607BF321BAD90300A60688 /* Debug */,
+				80607BF421BAD90300A60688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 801B239F21B559F4009BA49E /* Project object */;
+	rootObject = 80607BD821BAD90300A60688 /* Project object */;
 }

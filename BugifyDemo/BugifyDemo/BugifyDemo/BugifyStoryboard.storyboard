@@ -15,24 +15,68 @@
             <objects>
                 <viewController storyboardIdentifier="BugifyReportComposer" id="yVd-NC-yVb" customClass="BugifyReportComposer" customModule="BugifyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V0x-Ic-8JP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a4h-g1-0vT">
-                                <rect key="frame" x="0.0" y="20" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your email" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="P7V-kW-fPd">
+                                <rect key="frame" x="16" y="20" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XCk-4b-JU4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUZ-0F-uvO">
+                                <rect key="frame" x="8" y="58" width="359" height="0.5"/>
+                                <color key="backgroundColor" red="0.91177542098445596" green="0.91177542098445596" blue="0.91177542098445596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="zIz-KG-1ki"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7MG-Eu-GqA">
+                                <rect key="frame" x="0.0" y="58.5" width="375" height="544.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a4h-g1-0vT">
+                                <rect key="frame" x="285" y="513" width="74" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="U3s-gP-PXU"/>
+                                    <constraint firstAttribute="width" constant="74" id="xOv-qa-EkG"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7MG-Eu-GqA" firstAttribute="leading" secondItem="Ggu-Rl-2hO" secondAttribute="leading" id="IxJ-uI-t0Y"/>
+                            <constraint firstItem="P7V-kW-fPd" firstAttribute="leading" secondItem="Ggu-Rl-2hO" secondAttribute="leading" constant="16" id="O0a-70-Hdh"/>
+                            <constraint firstItem="Ggu-Rl-2hO" firstAttribute="trailing" secondItem="a4h-g1-0vT" secondAttribute="trailing" constant="16" id="RFj-o1-UXU"/>
+                            <constraint firstItem="Ggu-Rl-2hO" firstAttribute="trailing" secondItem="P7V-kW-fPd" secondAttribute="trailing" constant="16" id="TiI-RT-aBs"/>
+                            <constraint firstItem="P7V-kW-fPd" firstAttribute="top" secondItem="Ggu-Rl-2hO" secondAttribute="top" constant="20" id="UYt-uA-CfJ"/>
+                            <constraint firstItem="jUZ-0F-uvO" firstAttribute="leading" secondItem="V0x-Ic-8JP" secondAttribute="leading" constant="8" id="Ud8-fE-bSj"/>
+                            <constraint firstItem="jUZ-0F-uvO" firstAttribute="top" secondItem="P7V-kW-fPd" secondAttribute="bottom" constant="8" id="VUG-Zc-kzV"/>
+                            <constraint firstItem="7MG-Eu-GqA" firstAttribute="top" secondItem="jUZ-0F-uvO" secondAttribute="bottom" id="Y4D-d4-oQJ"/>
+                            <constraint firstItem="7MG-Eu-GqA" firstAttribute="bottom" secondItem="Ggu-Rl-2hO" secondAttribute="bottom" id="YbE-Xb-Xoq"/>
+                            <constraint firstItem="Ggu-Rl-2hO" firstAttribute="bottom" secondItem="a4h-g1-0vT" secondAttribute="bottom" constant="16" id="dRa-mg-VZg"/>
+                            <constraint firstAttribute="trailing" secondItem="jUZ-0F-uvO" secondAttribute="trailing" constant="8" id="dz5-Pb-OHQ"/>
+                            <constraint firstItem="7MG-Eu-GqA" firstAttribute="trailing" secondItem="Ggu-Rl-2hO" secondAttribute="trailing" id="efr-aK-H59"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ggu-Rl-2hO"/>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="bugDescription" destination="7MG-Eu-GqA" id="eFu-i7-HRu"/>
+                        <outlet property="bugDescriptionBottom" destination="YbE-Xb-Xoq" id="CMn-S0-xLE"/>
                         <outlet property="screenShotImageView" destination="a4h-g1-0vT" id="dkU-YS-1N3"/>
+                        <outlet property="screenShotImageViewBottom" destination="dRa-mg-VZg" id="PaR-JZ-xB9"/>
+                        <outlet property="senderEmail" destination="P7V-kW-fPd" id="QBy-zc-tMj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l41-m4-r0K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-804" y="-1092"/>
+            <point key="canvasLocation" x="-605.60000000000002" y="-1114.992503748126"/>
         </scene>
     </scenes>
 </document>
